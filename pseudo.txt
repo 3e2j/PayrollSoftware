@@ -1,0 +1,20 @@
+define payrollsoftware
+
+INPUT employee name
+IF input for employee name EQUALS ''
+  END
+INPUT employee position
+
+INPUT hours worked
+
+//Fix capitilisation to avoid code errors
+//turn empname and emppos into lowercase then caps first letter
+
+IF emppos EQUALS 'Manager'
+  moneyearned EQUALS pricecalcformanager
+ELSE
+  moneyearned EQUALS otherpositionscalc
+
+PRINT moneyearned
+
+while TRUE repeat payrollsoftware
